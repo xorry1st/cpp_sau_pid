@@ -1,0 +1,38 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build",
+            "type": "shell",
+            "command": "make -j6 all",
+            "icon":  {
+                                   "color":  "terminal.ansiYellow",
+                                   "id":  "tools"
+                               },
+            "group": "build",
+            // Use the standard MS compiler pattern to detect errors, warnings and infos
+            "problemMatcher": "$gcc",
+            "detail": "Собрать проект"
+        },
+        {
+            "label": "Clean",
+            "type": "shell",
+            "command": "make clean",
+            "icon":  {
+                                   "color":  "terminal.ansiRed",
+                                   "id":  "trash"
+                               },
+            "detail": "Очистить проект"
+        },
+        {
+            "label": "Run",
+            "type": "shell",
+            "command": "./cpp_sau.exe",
+            "icon":  {
+                        "color":  "terminal.ansiYellow",
+                        "id":  "tools"
+                     },
+            "detail": "Запуск"
+        }
+    ]
+}
